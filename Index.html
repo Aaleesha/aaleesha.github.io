@@ -1,0 +1,738 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>Prince Chaat Corner</title>
+		<link rel = "icon" href = 
+		"https://scontent.fdel27-3.fna.fbcdn.net/v/t1.6435-9/81652862_106819184171382_4143474724204183552_n.png?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=RTcF6U4I4wgAX80YhKG&_nc_ht=scontent.fdel27-3.fna&oh=00_AT-uBV8mEpH40EnClAm8uuOuvFu35Qn0cO-4VzxtDACgMg&oe=620EC4A2" 
+		        type = "image/x-icon">
+	</head>
+	<body>
+		<p style="text-align:center;">
+			<img src="chaatdisplay.png" alt="Prince Chaat Shop" width="100%">
+			<font face="WildWest" size="18">
+      <h1 style="text-align:center; color: white; background: #B83100;">Prince Chaat Corner</h1>
+		  </font>
+    </p>
+	</body>
+</html>
+<!--- that was just a sneak peak, now starts the real site --->
+<!DOCTYPE html>
+<html>
+<!--- ugh CSS here we go--->
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+ 
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+            z-index:2;
+        }
+ 
+        .background {
+            background: black;
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+ 
+        .nav-list {
+            width: 70%;
+            display: flex;
+            align-items: center;
+        }
+ 
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+ 
+        .logo img {
+            width: 100px;
+            border-radius: 50px;
+        }
+ 
+        .nav-list li {
+            list-style: none;
+            padding: 26px 30px;
+        }
+ 
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+        }
+ 
+        .nav-list li a:hover {
+            color: grey;
+        }
+ 
+        .firstsection {
+            background-color: #FDD387;
+            height: 400px;
+        }
+ 
+        .secondsection {
+            background-color: #FFA047;
+            height: 400px;
+        }
+
+        .thirdsection {
+            background-color: #FFC285;
+            height: 400px;
+        }
+ 		.section {
+            height: 400px;
+            background-color: #E2DBC5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+        }
+        .box-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            max-width: 80%;
+            margin: auto;
+            height: 80%;
+        }
+ 
+        .firsthalf {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+ 
+        .secondhalf {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+ 
+        .secondhalf img {
+            width: 70%;
+            border: 4px solid white;
+            border-radius: 150px;
+            display: block;
+            margin: auto;
+        }
+ 
+        .text-big {
+            font-family: 'Piazzolla', serif;
+            font-weight: bold;
+            font-size: 35px;
+        }
+ 
+        .text-small {
+            font-size: 18px;
+        }
+ 
+        .btn {
+            padding: 8px 20px;
+            margin: 7px 0;
+            border: 2px solid white;
+            border-radius: 8px;
+            background: none;
+            color: white;
+            cursor: pointer;
+        }
+ 
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+        }
+ 
+        .section-Left {
+            flex-direction: row-reverse;
+        }
+ 
+        .paras {
+            padding: 30px 65px;
+        }
+ 
+        .thumbnail img {
+            width: 250px;
+            border: 2px solid black;
+            border-radius: 26px;
+            margin-top: 19px;
+        }
+ 
+        .center {
+            text-align: center;
+        }
+ 
+        .text-footer {
+            text-align: center;
+            padding: 30px 0;
+            font-family: 'Ubuntu', sans-serif;
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+        .fa {
+	        padding: 20px;
+	        font-size: 30px;
+	        width: 50px;
+	        text-align: center;
+	        text-decoration: none;
+        }
+        /* sliding images */ 
+        * {
+        	box-sizing: border-box
+      }
+      body {
+        	font-family: Verdana, sans-serif;
+        	margin: 0
+      }
+      .mySlides {
+        	display: none
+      }
+      img {
+        	vertical-align: middle;
+      }
+      	.slideshow-container {
+        	max-width: 1000px;
+        	position: relative;
+        	margin: auto;
+      }
+      	/* Next & previous buttons */
+      	.prev,
+      	.next {
+	        cursor: pointer;
+	        position: absolute;
+	        top: 50%;
+	        width: auto;
+	        padding: 16px;
+	        margin-top: -22px;
+	        color: white;
+	        font-weight: bold;
+	        font-size: 18px;
+	        transition: 0.6s ease;
+	        border-radius: 0 3px 3px 0;
+	        user-select: none;
+      } 
+      	.next {
+	        right: 0;
+	        border-radius: 3px 0 0 3px;
+      } 
+	    .prev:hover,
+	    .next:hover {
+        	background-color: rgba(0, 0, 0, 0.8);
+      } 
+      	.text {
+	        color: #ffffff;
+	        font-size: 15px;
+	        padding: 8px 12px;
+	        position: absolute;
+	        bottom: 8px;
+	        width: 100%;
+	        text-align: center;
+      }
+      	.numbertext {
+	        color: #ffffff;
+	        font-size: 12px;
+	        padding: 8px 12px;
+	        position: absolute;
+	        top: 0;
+      }
+      	.dot {
+	        cursor: pointer;
+	        height: 15px;
+	        width: 15px;
+	        margin: 0 2px;
+	        background-color: #999999;
+	        border-radius: 50%;
+	        display: inline-block;
+	        transition: background-color 0.6s ease;
+      }
+      	.active,
+      	.dot:hover {
+        	background-color: #111111;
+      }
+      	.fade {
+	        -webkit-animation-name: fade;
+	        -webkit-animation-duration: 1.5s;
+	        animation-name: fade;
+	        animation-duration: 1.5s;
+      }
+      @-webkit-keyframes fade {
+        from {
+          	opacity: .4
+        }
+        to {
+          	opacity: 1
+        }
+      }
+      @keyframes fade {
+        from {
+          	opacity: .4
+        }
+        to {
+          	opacity: 1
+        }
+      }
+      @media only screen and (max-width: 300px) {
+        .prev,
+        .next,
+        .text {
+          	font-size: 11px
+        }
+      }
+
+      @media (min-width: 992px) {
+        .masthead {
+          	height: 100vh;
+        }
+        .masthead h1, .masthead .h1 {
+          	font-size: 5.5rem;
+        }
+      }
+      	/* portfolio and articles animated!!!! */
+      	.portfolio-item {
+	        display: block;
+	        position: relative;
+	        overflow: hidden;
+	        max-width: 530px;
+	        margin: auto auto 1rem;
+      }
+		.img-fluid {
+			max-width: 100%;
+			height: auto;
+			  }
+		.container,
+		.container-fluid,
+		.container-xxl,
+		.container-xl,
+		.container-lg,
+		.container-md,
+		.container-sm {
+		  	width: 100%;
+		  	padding-right: var(--bs-gutter-x, 0.75rem);
+		  	padding-left: var(--bs-gutter-x, 0.75rem);
+		  	margin-right: auto;
+		  	margin-left: auto;
+		}
+
+		@media (min-width: 576px) {
+		  .container-sm, .container {
+		    max-width: 540px;
+		  }
+		}
+		@media (min-width: 768px) {
+		  .container-md, .container-sm, .container {
+		    max-width: 720px;
+		  }
+		}
+		@media (min-width: 992px) {
+		  .container-lg, .container-md, .container-sm, .container {
+		    max-width: 960px;
+		  }
+		}
+		@media (min-width: 1200px) {
+		  .container-xl, .container-lg, .container-md, .container-sm, .container {
+		    max-width: 1140px;
+		  }
+		}
+		@media (min-width: 1400px) {
+		  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+		    max-width: 1320px;
+		  }
+		}
+      	.portfolio-item .caption {
+	        display: flex;
+	        height: 100%;
+	        width: 100%;
+	        background-color: rgba(33, 37, 41, 0.2);
+	        position: absolute;
+	        top: 0;
+	        bottom: 0;
+	        z-index: 1;
+      }
+     	.portfolio-item .caption .caption-content {
+	        color: #fff;
+	        margin: auto 2rem 2rem;
+      }
+      	.portfolio-item .caption .caption-content h2, .portfolio-item .caption .caption-content .h2 {
+	        font-size: 0.8rem;
+	        text-transform: uppercase;
+      }
+      	.portfolio-item .caption .caption-content p {
+	        font-weight: 300;
+	        font-size: 1.2rem;
+      }
+      .mb-0 {
+        	margin-bottom: 0 !important;
+      }
+      caption {
+	        padding-top: 0.5rem;
+	        padding-bottom: 0.5rem;
+	        color: #6c757d;
+	        text-align: left;
+      }
+      .col-lg-6 {
+        flex: 0 0 auto;
+        width: 50%;
+      }
+      @media (min-width: 992px) {
+        .portfolio-item {
+	        max-width: none;
+	        margin: 0;
+        }
+        @media (min-width: 992px) {
+          .col-lg {
+            flex: 1 0 0%;
+          }
+        .portfolio-item .caption {
+          	transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+          	transition: clip-path 0.25s ease-out, background-color 0.7s;
+          	transition: clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+          	-webkit-clip-path: inset(0px);
+                  clip-path: inset(0px);
+        }
+        .portfolio-item .caption .caption-content {
+	        transition: opacity 0.25s;
+	        margin-left: 5rem;
+	        margin-right: 5rem;
+	        margin-bottom: 5rem;
+        }
+        .portfolio-item img {
+          	transition: -webkit-clip-path 0.25s ease-out;
+          	transition: clip-path 0.25s ease-out;
+          	transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
+          	-webkit-clip-path: inset(-1px);
+                  clip-path: inset(-1px);
+        }
+        .portfolio-item:hover img {
+          	-webkit-clip-path: inset(2rem);
+                  clip-path: inset(2rem);
+        }
+        .px-4 {
+          padding-right: 1.5rem !important;
+          padding-left: 1.5rem !important;
+        }
+        .gx-0 {
+          --bs-gutter-x: 0;
+        }
+        .row {
+          --bs-gutter-x: 1.5rem;
+          --bs-gutter-y: 0;
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: calc(-1 * var(--bs-gutter-y));
+          margin-right: calc(-0.5 * var(--bs-gutter-x));
+          margin-left: calc(-0.5 * var(--bs-gutter-x));
+        }
+        .px-lg-5 {
+          padding-right: 3rem !important;
+          padding-left: 3rem !important;
+        }
+        .content-section {
+          padding-top: 7.5rem;
+          padding-bottom: 7.5rem;
+        }
+        .portfolio-item:hover .caption {
+          	background-color: #B83100;
+          	-webkit-clip-path: inset(2rem);
+                  clip-path: inset(2rem);
+        }
+      }
+    </style>
+</head>
+
+<!--- Let's go! The main code starts here--->
+
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src= "https://scontent.fdel27-3.fna.fbcdn.net/v/t1.6435-9/81652862_106819184171382_4143474724204183552_n.png?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=RTcF6U4I4wgAX80YhKG&_nc_ht=scontent.fdel27-3.fna&oh=00_AT-uBV8mEpH40EnClAm8uuOuvFu35Qn0cO-4VzxtDACgMg&oe=620EC4A2">
+            </div>
+            <li><a href="#eats">Recommended eats</a></li>
+            
+            <li><a href="#contact">Articles</a></li>
+            <li><a href="#articles">Contact Us</a></li>
+        </ul>
+    </nav>
+<!---location and intro --->
+    <section class="firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="eats">About Us</h1>
+                <p class="text-small">
+                    Find us at <em>M-29, Greater Kailash (GK) 1, New Delhi</em>
+                    <br>
+                    <br>
+                    Since 1965, the brand name Prince has been synonymous with quality & taste. Every recipe has been passed on from generation to generation, to get the authentic Indian street food experience to you.
+                </p>
+                <br>
+                <br>
+<!--- random line as a design element and theme connector!--->
+			 <center>
+			 <HR WIDTH="100%" COLOR="#B83100" SIZE="4">
+			 </center>
+
+            </div>
+        </div>
+    </section>
+ 
+    <section class="secondsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" >
+                    Recommended Eats
+                </h1>
+                <p class="text-small">
+                    Indian street foods are known worldwide for their taste, diversity and easy accessibility in various cities. Some of our customers' favourites are listed below.
+                    <br>
+                    What all we offer:
+                    <br>
+                    <br>
+<!--- kind of like a mini menu to show tyhe viewers the wide range of dishes available at prince chaat--->
+                    <table style="width:100%; "> 
+                    	<tr> 
+                    		
+                    		<td><strong>Chaat</strong></td> 
+                    		<td><strong>Tikki</strong></td> 
+                    		<td><strong>Gol Gappe</strong></td> 
+                    		<td><strong>Pav Bhaji, Bhel</strong></td>	
+                    	</tr> 
+                    	<tr> 
+                    		<td>
+                    			<ul> 
+                    				<li>Dahi Bhalla </li> 
+                    				<li>Samosa Chaat </li> 
+                    				<li>Papri </li> 
+                    				<li>Special Palak Papdi </li>
+                    			</ul>
+                    		</td> 
+                    		<td>
+                    			<ul> 
+                    				<li>Dahi Aloo Tikki </li> 
+                    				<li>SPL Palak Tikki </li> 
+                    				<li>Paneer Tikki </li> 
+                    				<li>Chole Tikki </li>
+                    			</ul>
+                    		</td> 
+                    		<td>
+                    			<ul> 
+                    				<li>Suji gol gappe </li> 
+                    				<li>Atta gol gappe </li> 
+                    				<li>Khatta Meetha Pani vale</li> 
+                    				<li>Hing Pani vale </li>
+                    			</ul>
+                    		</td> 
+                    		<td>
+                    			<ul> 
+                    				<li>Mushroom ki Gilawat </li> 
+                    				<li>Dahi ke kebab </li> 
+                    				<li>Masala Soya Chaap</li> 
+                    				<li>Sev Puri </li>
+                    			</ul>
+                    		</td> 
+                    	</tr> 
+                    </table>
+                    <br>
+                    and more! 
+                </p>
+            </div>
+        </div>
+    </section>
+<!--- using the banner image as a page divider + it gows with the colour scheme of the whole site!--->
+	 	<center>
+ 			<img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuerzmVOrrUJqY2345YorjJO124kM0-mr-xQ&usqp=CAU" alt="prince-chaat-corner-greater-kailash-1orner" width="33%">
+ 			<img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuerzmVOrrUJqY2345YorjJO124kM0-mr-xQ&usqp=CAU" alt="prince-chaat-corner-greater-kailash-1orner" width="33%">
+ 			<img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuerzmVOrrUJqY2345YorjJO124kM0-mr-xQ&usqp=CAU" alt="prince-chaat-corner-greater-kailash-1orner" width="33%">
+		</center>
+
+    <section class="section">
+        <div class="box-main">
+        	<div class="secondHalf">
+	            <h1 class="text-big" id="contact" >By street food lovers
+	            </h1>
+	            <br>
+	            <p class="text-small" >
+	                Linked below are some interesting articles and blogs for street food lovers, by street food lovers.
+	            </p>
+	        </div>
+        </div>
+    </section>
+
+<!-- Portfolio = linking images to some articles writtenm about Prince Chaat-->
+        <section class="content-section" id="portfolio">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-0">
+                	<!--- box 1 for article linking --->
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="Article 1 for Prince Chaat.html">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Street food street-food-is-an-integral-part-of-indias-culture-and-urban-identity-6294751</div>
+                                    <p class="mb-0">Street food has been and is an integral part of Indian history and culture...</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="https://1.bp.blogspot.com/-9YvjEJF8Dno/Vizj30fXdwI/AAAAAAAABVU/PAYoYeymZTg/s640/3048032066_8cbec7e3ed_z.jpg" alt="article img 1" />
+                        </a>
+                    </div>
+                    <!--- box 2 for article linking --->
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="https://www.moneycontrol.com/news/opinion/street-food-is-an-integral-part-of-indias-culture-and-urban-identity-6294751.html">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">SMRUTI KOPPIKAR</div>
+                                    <p class="mb-0">Street food is an integral part of India’s culture and urban identity</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="http://1.bp.blogspot.com/-8uolP2hhWH4/VizjAacuJ1I/AAAAAAAABVE/znfnocToIb4/s1600/6737403377_221c5f2b21_z.jpg" alt="article img 2" />
+                        </a>
+                    </div>
+                    <!--- box 3 for article linking --->
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="https://www.tripadvisor.in/Restaurant_Review-g304551-d8712727-Reviews-Prince_s_Paan_Chaat_Corner-New_Delhi_National_Capital_Territory_of_Delhi.html">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Tripadvisor</div>
+                                    <p class="mb-0">Going to the place after almost 1.5 years - and as usual excellent service and Food is delicious...</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="https://static.westernunion-microsites.com/blog/uploads/2019/08/Bhelpuri-1.jpg" alt="article img 3" />
+                        </a>
+                    </div>
+                    <!--- box 4 for article linking --->
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="https://nicelocal.in/delhi/restaurants/prince_chaat_corner_in_greater_kailash/">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h2">Nicelocal</div>
+                                    <p class="mb-0">In situations when you need to grab a quick snack, fast food can be a solution to this problem. Prince Chaat Corner has a choice of meals that are quick to cook and grant some nourishment...</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="https://static.westernunion-microsites.com/blog/uploads/2019/08/Pav-Bhaji.jpg" alt="article img 4" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br id="articles">
+        <br>
+        <br>
+
+<!---social media contacts--->
+    <section class="thirdsection">
+        <div class="box-main" >
+        	<div class="secondHalf">
+	            <h1 class="text-big" >Contact us</h1>
+	            <br>
+	            <p class="text-small">
+	                <p>Click on the icons below to fing us on our socials!</p>
+	                <br>
+	                <a href="https://www.facebook.com/GKPrinceChaatCorner/?ref=page_internal">
+	                <img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png" alt="facebook" style="width:42px;height:42px;">
+	                </a>      
+	                <a href="https://www.instagram.com/princechaatcorner/">
+	                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="instagram" style="width:42px;height:42px;">
+	                </a>
+	                <a href="https://www.zomato.com/ncr/prince-chaat-corner-greater-kailash-gk-1-new-delhi">
+	                <img src="https://cdn.iconscout.com/icon/free/png-256/zomato-1937646-1637644.png" alt="zomato" style="width:42px;height:42px;">
+	                </a>
+
+	                <a href="https://www.swiggy.com/restaurants/prince-chaat-corner-greater-kailash-1-greater-kailash-new-delhi-19841">
+	                <img src="https://cdn.iconscout.com/icon/free/png-128/swiggy-1613371-1369418.png" alt="swiggy" style="width:42px;height:42px;">
+	                </a>
+
+	                <a href="https://www.nearbuy.com/delhi-ncr/prince-chaat-corner-greater-kailash-1/about?merchantId=97106">
+	                <img src="https://img.utdstc.com/icon/0d9/4b6/0d94b6bd18aa0c019be0fbb0e22f2f2cabe07566ab9632259bea024a1a311273:200" alt="nearbuy" style="width:42px;height:42px;">
+	                </a>
+	                <br>
+	                <br>
+	               <p>Want <strong>email updates</strong> on festive offers and special deals?
+	               Subscribe to keep the tradition of Indian street food alive!</p>
+
+	               <form action="#">
+	                 <label for="email">Enter your email:</label>
+	                 <input type="email" id="email" name="email">
+	                 <input type="submit" value="Submit">
+	               </form>
+	               <br>
+	            </p>
+ 			</div>
+        </div>
+ 
+    </section>
+
+    <br>
+    <br>
+
+<!--- three images in a slideshow --->
+	<div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="https://b.zmtcdn.com/data/pictures/chains/4/19243274/cf0af785f33865ae478b769a16964015.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*" style="width:100%">
+        <div class="text">Chaat</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkpAuRAA3DfBiIjko5-L1l6HNiwiyqkzfAhFxLrHDMVuC77coqiXimFD3gmWftysqIKi4&usqp=CAU" style="width:100%">
+        <div class="text">Gol Gappas</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="https://lh3.googleusercontent.com/6_bo-BMDa6wFfGSamlAdGKoqLpR3bAiTpNaxUCtYJK1QB6igCpLsIA2vIS5PhbrECNXzqQOEk1440_OwR23Sx-Mx13Vc1QxYaEA3TSg=w512" style="width:100%">
+        <div class="text">Assorted street food</div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if(n > slides.length) {
+          slideIndex = 1
+        }
+        if(n < 1) {
+          slideIndex = slides.length
+        }
+        for(i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for(i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+    <br><br>
+    <footer class="background">
+        <p class="text-footer">
+            Website designed by Aaleesha Sawhney
+        </p>
+    </footer>
+</body>
+ 
+</html>
